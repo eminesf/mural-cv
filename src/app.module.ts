@@ -7,7 +7,7 @@ import { MessageModule } from './message/message.module';
 @Module({
   imports: [
     MongooseModule.forRoot(
-      'mongodb+srv://emiliano:2QX67UeOziO77ykO@mural-my-cv.owsov.mongodb.net/mural-my-cv?retryWrites=true&w=majority',
+      'mongodb+srv://node.env={USER}:node.env={PASSWORD}@mural-my-cv.owsov.mongodb.net/mural-my-cv?retryWrites=true&w=majority',
     ),
     MessageModule,
   ],
